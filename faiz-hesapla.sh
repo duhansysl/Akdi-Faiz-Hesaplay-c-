@@ -2,7 +2,6 @@
 #
 # ======================================================================
 #
-#
 #  Copyright (C) 2024 duhansysl
 #
 #  This program is free software: you can redistribute it and/or modify
@@ -32,7 +31,7 @@ akdi_faiz_orani_orta=4.25     # % olarak  (25.000 TL ile 150.000 TL arası)
 gecikme_faiz_orani_orta=4.55  # % olarak  (25.000 TL ile 150.000 TL arası)
 akdi_faiz_orani_buyuk=4.75    # % olarak  (150.000 TL üstü)
 gecikme_faiz_orani_buyuk=5.05 # % olarak  (150.000 TL üstü)
-vergi_orani=30                # %20 vergi oranı (KKDF ve BSMV toplamı)
+vergi_orani=30                # %30 vergi oranı (%15 KKDF ve %15 BSMV toplamı)
 
 # Asgari ödeme yüzdesi tanımlamaları
 asgari_odeme_orani_kucuk=20   # %20 olarak (0 TL ile 25.000 TL arası)
