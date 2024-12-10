@@ -84,6 +84,16 @@ else
 	gecikme_faiz=0
 fi
 
+# Ödeme fazlaysa faiz hesaplamasını devre dışı bırak
+if (( $(echo "$odenen_miktar > $toplam_borc" | bc) )); then
+	geriye_kalan_borc=0
+	alisveris_faizi_birinci=0
+	alisveris_faizi_ikinci=0
+	toplam_faiz=0
+	vergi_tutari=0
+	toplam_maliyet=0
+fi
+
 # Alışveriş faiz tutarı (son ödeme tarihinden sonraki günler için kalan borç)
 alisveris_faizi_ikinci=$(echo "scale=2; $geriye_kalan_borc * $akdi_faiz / 100 * $sonraki_gun / 30" | bc)
 
