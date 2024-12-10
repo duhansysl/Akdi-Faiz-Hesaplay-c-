@@ -109,8 +109,8 @@ toplam_maliyet=$(echo "scale=2; $toplam_faiz + $vergi_tutari" | bc)
 echo "==================== Faiz Hesaplama ===================="
 echo
 echo "-> Toplam borç miktarı                       : $toplam_borc TL"
-echo "-> Ödenen miktar                             : $odenen_miktar TL"
 echo "-> Asgari ödeme tutarı (%$asgari_odeme_orani)                 : $asgari_tutar TL"
+echo "-> Ödenen miktar                             : $odenen_miktar TL"
 echo "-> Kalan borç                                : $geriye_kalan_borc TL"
 if (( $(echo "$odenen_miktar < $asgari_tutar" | bc) )); then
 echo "-> Kalan asgari borç                         : $geriye_kalan_asgari_borc TL"
